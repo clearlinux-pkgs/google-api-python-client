@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 1.5.0
-Release  : 2
+Release  : 3
 URL      : https://pypi.python.org/packages/source/g/google-api-python-client/google-api-python-client-1.5.0.tar.gz
 Source0  : https://pypi.python.org/packages/source/g/google-api-python-client/google-api-python-client-1.5.0.tar.gz
 Summary  : Google API Client Library for Python
