@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 1.5.4
-Release  : 10
+Release  : 11
 URL      : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.5.4.tar.gz
 Source0  : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.5.4.tar.gz
 Summary  : Google API Client Library for Python
