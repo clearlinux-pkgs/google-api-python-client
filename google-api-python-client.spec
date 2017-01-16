@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 1.5.4
-Release  : 11
+Release  : 12
 URL      : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.5.4.tar.gz
 Source0  : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.5.4.tar.gz
 Summary  : Google API Client Library for Python
@@ -38,13 +38,15 @@ python components for the google-api-python-client package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1484548521
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
+export SOURCE_DATE_EPOCH=1484548521
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
