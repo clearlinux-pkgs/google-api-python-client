@@ -4,13 +4,12 @@
 #
 Name     : google-api-python-client
 Version  : 1.6.5
-Release  : 18
+Release  : 19
 URL      : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.6.5.tar.gz
 Source0  : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.6.5.tar.gz
 Summary  : Google API Client Library for Python
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: google-api-python-client-legacypython
 Requires: google-api-python-client-python3
 Requires: google-api-python-client-python
 Requires: httplib2
@@ -30,15 +29,6 @@ BuildRequires : uritemplate
 
 %description
 accessing the Plus, Moderator, and many other Google APIs.
-
-%package legacypython
-Summary: legacypython components for the google-api-python-client package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the google-api-python-client package.
-
 
 %package python
 Summary: python components for the google-api-python-client package.
@@ -66,25 +56,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521133463
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523289302
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1521133463
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
