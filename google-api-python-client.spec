@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 1.6.5
-Release  : 19
+Release  : 20
 URL      : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.6.5.tar.gz
 Source0  : http://pypi.debian.net/google-api-python-client/google-api-python-client-1.6.5.tar.gz
 Summary  : Google API Client Library for Python
@@ -23,7 +23,6 @@ BuildRequires : pip
 BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
-BuildRequires : setuptools-legacypython
 BuildRequires : six
 BuildRequires : uritemplate
 
@@ -56,7 +55,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523289302
+export SOURCE_DATE_EPOCH=1523555873
 python3 setup.py build -b py3
 
 %install
