@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 1.7.8
-Release  : 41
+Release  : 42
 URL      : https://files.pythonhosted.org/packages/7a/84/ffde3c95d4162cdc8bae710fecc6873cccb05ac33afc3b2c925c74cc0150/google-api-python-client-1.7.8.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7a/84/ffde3c95d4162cdc8bae710fecc6873cccb05ac33afc3b2c925c74cc0150/google-api-python-client-1.7.8.tar.gz
 Summary  : Google API Client Library for Python
