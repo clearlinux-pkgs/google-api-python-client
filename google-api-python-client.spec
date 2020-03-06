@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 1.7.11
-Release  : 45
+Release  : 46
 URL      : https://files.pythonhosted.org/packages/5e/19/9fd511734c0dee8fa3d49f4109c75e7f95d3c31ed76c0e4a93fbba147807/google-api-python-client-1.7.11.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5e/19/9fd511734c0dee8fa3d49f4109c75e7f95d3c31ed76c0e4a93fbba147807/google-api-python-client-1.7.11.tar.gz
 Summary  : Google API Client Library for Python
@@ -25,10 +25,7 @@ BuildRequires : six
 BuildRequires : uritemplate
 
 %description
-# Google API Client
-[![PyPI version](https://badge.fury.io/py/google-api-python-client.svg)](https://badge.fury.io/py/google-api-python-client)
-[![Compat check PyPI](https://python-compatibility-tools.appspot.com/one_badge_image?package=google-api-python-client)](https://python-compatibility-tools.appspot.com/one_badge_target?package=google-api-python-client)
-[![Compat check github](https://python-compatibility-tools.appspot.com/one_badge_image?package=git%2Bgit%3A//github.com/googleapis/google-api-python-client.git)](https://python-compatibility-tools.appspot.com/one_badge_target?package=git%2Bgit%3A//github.com/googleapis/google-api-python-client.git)
+accessing the Plus, Moderator, and many other Google APIs.
 
 %package python
 Summary: python components for the google-api-python-client package.
@@ -43,7 +40,12 @@ python components for the google-api-python-client package.
 Summary: python3 components for the google-api-python-client package.
 Group: Default
 Requires: python3-core
-Provides: pypi(google-api-python-client)
+Provides: pypi(google_api_python_client)
+Requires: pypi(google_auth)
+Requires: pypi(google_auth_httplib2)
+Requires: pypi(httplib2)
+Requires: pypi(six)
+Requires: pypi(uritemplate)
 
 %description python3
 python3 components for the google-api-python-client package.
@@ -58,8 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582931391
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583535244
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
