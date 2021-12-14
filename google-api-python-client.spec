@@ -4,7 +4,7 @@
 #
 Name     : google-api-python-client
 Version  : 2.33.0
-Release  : 68
+Release  : 69
 URL      : https://files.pythonhosted.org/packages/7c/0a/8997b497aaef363d0a2c0410d30b99dbbde835442e045110775b6b4d3725/google-api-python-client-2.33.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/7c/0a/8997b497aaef363d0a2c0410d30b99dbbde835442e045110775b6b4d3725/google-api-python-client-2.33.0.tar.gz
 Summary  : Google API Client Library for Python
